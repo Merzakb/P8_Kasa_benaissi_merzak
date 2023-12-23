@@ -1,12 +1,16 @@
-import { Link } from "react-router-dom";
-import Logo from "../../assets/LOGO.svg"
 
-function Banner() {
+
+
+function Banner({img, title}) {
     return (
-        <div>
-            
+        <div className="banner">
+            <img src={img}  className="banner__img"/>
+            <div className="banner__overlay">
+                <h1 className="banner__overlay--title">{title}</h1>
+            </div>
         </div>
-  )
+
+    )
 }
 
 export default Banner;

@@ -1,0 +1,47 @@
+.notFound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.69rem;
+    padding: 0 5rem;
+    
+    @include small-screen{
+        padding: 0 1rem; 
+    }
+
+    &__paragraph1{
+        display: flex;
+        width: 37.3125rem;
+        height: 16.4375rem;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 18rem;
+        font-weight: 700;
+        color: $color-primary;
+        @include small-screen{
+            font-size: 6rem;
+            width: 12.375rem;
+            height: 6.1875rem;  
+        }
+    }
+
+    &__paragraph2{
+        font-size: 2.25rem;
+        color: $color-primary;
+        text-align: center;
+        @include small-screen{
+            font-size: 1.25rem;
+        }
+    }
+
+    &__paragraph3{
+        font-size: 1.125rem;
+        text-decoration-line: underline;
+        color: $color-primary;
+        text-align: center;
+        @include small-screen{
+            font-size: 0.875rem;
+        }
+    }
+}
