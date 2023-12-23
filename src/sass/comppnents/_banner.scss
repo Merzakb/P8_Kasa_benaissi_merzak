@@ -2,11 +2,6 @@
     position: relative;
     height: 13.9375rem;
     border-radius: 1.5625rem;
-    margin: 0 5rem;
-
-    @include small-screen{
-        margin: 0 1rem;
-    }
     
     &__img{
         border-radius: 1.5625rem;

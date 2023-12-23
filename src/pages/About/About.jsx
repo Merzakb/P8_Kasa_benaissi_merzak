@@ -3,9 +3,10 @@ import AboutBannerImage from "../../assets/aboutBackround.png"
 
 function About() {
     return (
-        <div >
+        <div className="aboutPage">
             <Banner
                 img = {AboutBannerImage}
+                alt= "montagnes enneigées"
             />
         </div>
   )

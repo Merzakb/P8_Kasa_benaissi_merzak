@@ -1,15 +1,18 @@
 import Banner from "../../components/Banner/Banner";
+import Cards from "../../components/Cards/Cards";
 import HomeBannerImage from "../../assets/homeBackground.png"
 
 
 function Home() {
-    const title = "Chez vous, partout et ailleurs"
+    const bannerTitle = "Chez vous, partout et ailleurs"
     return (
-        <div >
+        <div className="homePage">
             <Banner
                 img = {HomeBannerImage}
-                title = {title} 
+                alt= "mer et monatgnes"
+                title = {bannerTitle} 
             />
+            <Cards  />
         </div>
   )
 }

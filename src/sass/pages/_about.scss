@@ -1,0 +1,7 @@
+.aboutPage{
+    margin: 0 5rem;
+    
+    @include small-screen{
+        margin: 0 1rem;
+    }
+}
