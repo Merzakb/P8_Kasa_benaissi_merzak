@@ -9,7 +9,7 @@ function Home() {
         <div className="homePage">
             <Banner
                 img = {HomeBannerImage}
-                alt= "mer et monatgnes"
+                alt= "mer et montagnes"
                 title = {bannerTitle} 
             />
             <Cards  />

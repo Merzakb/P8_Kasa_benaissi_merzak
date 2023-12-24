@@ -6,7 +6,7 @@ function Cards(){
     return (
         <section className="roomsCards">
             {roomsList.map(({ id, cover, title }) => (
-                <Link  key={id}>
+                <Link  key={id} to={`room/${id}`}>
                     <article className="card">
                         <img src={cover} alt={`${title} cover`} className="card__img"/>
                         <div className="card__overlay">

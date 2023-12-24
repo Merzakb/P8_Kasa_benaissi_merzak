@@ -1,7 +1,21 @@
 .aboutPage{
     margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.88rem;
+    color: #FF6060;
     
     @include small-screen{
         margin: 0 1rem;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        margin: 0 5rem;
+        gap: 1.88rem;
+        @include small-screen{
+            margin: 0;
+        }
     }
 }
