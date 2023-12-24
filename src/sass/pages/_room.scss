@@ -8,15 +8,16 @@
     @include small-screen{
         margin: 0 1rem;
     }
+    @include medium-screen{
+        margin: 0 1rem;
+    }
 }
 
-.details-item{
+.details__item{
     display: flex;
     flex-direction: column;
     width: 48%;
-    @include small-screen{
-        width: 98%;
-    }
+   
 }
 
 .details{
@@ -26,6 +27,33 @@
     gap: 2rem;
     color: #FF6060;
 
+    @include small-screen{
+        :nth-child(1) { order: 1; }
+        :nth-child(2) { order: 4; }
+        :nth-child(3) { order: 2; }
+        :nth-child(4) { order: 3; }
+        :nth-child(5) { order: 5; }
+        :nth-child(6) { order: 6; }
+
+    }
+
+    @include medium-screen{
+        :nth-child(1) { order: 1; }
+        :nth-child(2) { order: 4; }
+        :nth-child(3) { order: 2; }
+        :nth-child(4) { order: 3; }
+        :nth-child(5) { order: 5; }
+        :nth-child(6) { order: 6; }
+    }
+
+    &__locations{
+        @include small-screen{
+            width: 98%;
+        }
+        @include medium-screen{
+            width: 98%;
+        }
+    }
     &__title{
         font-size: 2.25rem;
         padding: 0.7rem  0;
@@ -40,6 +68,15 @@
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
+
+        @include small-screen{
+            width: 50%;
+        }
+
+        @include medium-screen{
+            width: 50%;
+        }
+
         &--picture{
             width: 4rem;
             height: 4rem;
@@ -51,14 +88,26 @@
             font-size: 1.125rem;
             text-align: center;
             width: 20%;
+            @include small-screen{
+                width: 40%;
+            }
+            @include medium-screen{
+                width: 40%;
+            }
         }
     }
 
     &__tags{
         display: flex;
         flex-flow: row wrap;
-
         gap: 0.5rem;
+        @include small-screen{
+            width: 98%;
+        }
+        @include medium-screen{
+            width: 98%;
+        }
+
         &--item{
             min-width: 7.1875rem;
             border-radius: 0.625rem;
@@ -74,8 +123,36 @@
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
+        @include small-screen{
+            justify-content: flex-start;
+            width: 40%;
+        }
+        @include medium-screen{
+            justify-content: flex-start;
+            width: 40%;
+        }
+    }
+
+    &__description{
+        @include small-screen{
+            width: 98%;
+        }
+        @include medium-screen{
+            width: 98%;
+        }
+    }
+
+    &__equipment{
+        @include small-screen{
+            width: 98%;
+        }
+        @include medium-screen{
+            width: 98%;
+        }
     }
 }
+
+
 .empty-star{
     color: #C4C4C4;;
 }

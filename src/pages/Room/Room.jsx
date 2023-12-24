@@ -1,6 +1,7 @@
-import { useParams } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
 import { roomsList } from "../../data/roomsList"
-import { Link } from "react-router-dom"
+
+
 
 import Rating from "../../components/Rating/Rating"
 import Collaps from "../../components/Collaps/Collaps"
@@ -10,8 +11,9 @@ function Room() {
     const {roomId}  = useParams()
     const room = roomsList.find(room => room.id === roomId)
    
+    //Si l'annonce n'est pas trouvée, rediriger automatiquement vers la page NotFound
     if (!room) {
-        return <Link to="/notfound"></Link>
+        return <Navigate to="/not-found" />
     }
 
     return (
@@ -20,39 +22,39 @@ function Room() {
                 <Slide pictures={room.pictures} />
             </div>
 
-            <div className="room__details details">
+            <div className="details">
 
                 {/* location et titre de l'annonce */}
-                <div className="details__locations details-item">
+                <div className="details__locations details__item">
                     <h2 className="details__title">{room.title}  </h2>
                     <p className="details__location">{room.location}</p>
                 </div>
 
                  {/* les information du propriétaire */}
-                <div className="details__host details-item">
+                <div className="details__host details__item">
                     <p className="details__host--name">{room.host.name}</p>
                     <img src={room.host.picture} alt="" className="details__host--picture" />
                 </div>
 
                 {/* les tags de l'annonce */}
-                <ul className="details__tags details-item">
+                <ul className="details__tags details__item">
                     {room.tags.map((tag, index) => (
                         <li key={index} className="details__tags--item">{tag}</li>
                     ))}
                 </ul>
 
                 {/* le score de l'annonceur */}
-                <div className="details__rating details-item">
+                <div className="details__rating details__item">
                     <Rating rating={room.rating} />
                 </div>
 
                 {/* la desciption de l'annonce */}
-                <div className="details__description details-item">
+                <div className="details__description details__item">
                     <Collaps title="Description" content={<p>{room.description}</p>} />
                 </div>
 
                 {/* les équipements de l'annonce */}
-                <div className="details__equipment details-item">
+                <div className="details__equipment details__item">
                     <Collaps
                         title="Équipements"
                         content={

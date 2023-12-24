@@ -9,3 +9,10 @@ $breakpoints: (
         @content;
     }
 };
+
+ //medium screen
+ @mixin medium-screen {
+    @media screen and (min-width: map-get($breakpoints, small)) and (max-width: map-get($breakpoints, medium)){
+        @content;
+    }
+};
