@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 import Rating from "../../components/Rating/Rating"
 import Collaps from "../../components/Collaps/Collaps"
-import HomeBannerImage from "../../assets/homeBackground.png"
+import Slide from "../../components/Slide/Slide"
 
 function Room() {
     const {roomId}  = useParams()
@@ -17,8 +17,9 @@ function Room() {
     return (
         <div className="room">
             <div className="slider-container">
-                <img src={HomeBannerImage}  />
+                <Slide pictures={room.pictures} />
             </div>
+
             <div className="room__details details">
 
                 {/* location et titre de l'annonce */}
@@ -65,7 +66,7 @@ function Room() {
                 </div>
             </div> 
         </div>
-  )
+    )
 }
 
 export default Room
