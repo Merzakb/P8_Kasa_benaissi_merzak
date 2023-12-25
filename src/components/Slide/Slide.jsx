@@ -27,8 +27,8 @@ function Slide({ pictures }) {
             <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="slide__image" />
             {totalPictures > 1 && (
                 <div>
-                    <button onClick={prevSlide} className="slide__button"><img src={ArrowLeft} className=" arrow arrow-left" /></button>
-                    <button onClick={nextSlide} className="slide__button"><img src={ArrowRight} className="arrow arrow-right" /></button>
+                    <div onClick={prevSlide} className="slide__button"><img src={ArrowLeft} className=" arrow arrow-left" /></div>
+                    <div onClick={nextSlide} className="slide__button"><img src={ArrowRight} className="arrow arrow-right" /></div>
                 </div>
             )}
             <div className="slide__counter">{totalPictures > 1 && `${currentIndex + 1}/${totalPictures}`}</div>

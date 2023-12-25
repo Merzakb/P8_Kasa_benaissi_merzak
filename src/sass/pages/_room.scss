@@ -89,6 +89,7 @@
             text-align: center;
             width: 20%;
             @include small-screen{
+                font-size: 0.75rem;
                 width: 40%;
             }
             @include medium-screen{

@@ -1,17 +1,30 @@
 .roomsCards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(21.25rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     background-color: $color-secondary;
     border-radius: 1.56rem;
     padding: 3rem;
     width: 100%;
+    @include small-screen{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        gap: 1.25rem;
+        background-color: $color-white;
+    }
+    @include medium-screen{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .card{
     position: relative;
     height: 21.25rem;
     border-radius: 0.63rem;
+
+    @include small-screen{
+        height: 15.9375rem;
+    }
 
     &__img{
        object-fit: cover;

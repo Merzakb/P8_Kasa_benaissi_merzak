@@ -1,12 +1,12 @@
 @import "./utilities/variables";
 @import "./utilities/mixins";
 @import "./base/base";
-@import "./components/footer";
-@import "./components/header";
 @import "./components/banner";
 @import "./components/cards";
 @import "./components/collaps";
 @import "./components/slide";
+@import "./layout/footer";
+@import "./layout/header";
 @import "./pages/notfound";
 @import "./pages/home";
 @import "./pages/about";

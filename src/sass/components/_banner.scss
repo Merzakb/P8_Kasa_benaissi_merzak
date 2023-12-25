@@ -2,7 +2,10 @@
     position: relative;
     height: 13.9375rem;
     border-radius: 1.5625rem;
-    
+    @include small-screen{
+        height: 6.9375rem;
+    }
+
     &__img{
         border-radius: 1.5625rem;
         width: 100%;
@@ -27,6 +30,7 @@
             color: white;
             z-index: 1;
             font-size: 3rem;
+            line-height: 130%;
             @include small-screen{
                 font-size: 1.5rem;
                 line-height: 100%;

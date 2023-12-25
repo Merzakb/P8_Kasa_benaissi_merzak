@@ -35,9 +35,22 @@
         font-size: 1.5rem;
         font-style: normal;
         font-weight: 500;
-        line-height: 142.6%; /* 2.139rem */
+        line-height: 142.6%; 
         @include small-screen{
-            font-size: 0.75rem;
+            font-size: 1rem;
+        }
+    }
+    &--active{
+        color: $color-primary;
+        text-align: right;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%; 
+        text-decoration: none;
+        text-decoration-line: underline;
+        @include small-screen{
+            font-size: 1rem;
         }
     }
 }
