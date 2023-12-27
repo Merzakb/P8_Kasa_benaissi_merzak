@@ -4,7 +4,7 @@ import { roomsList } from "../../data/roomsList"
 
 
 import Rating from "../../components/Rating/Rating"
-import Collaps from "../../components/Collaps/Collaps"
+import Collapse from "../../components/Collapse/Collapse"
 import Slide from "../../components/Slide/Slide"
 
 function Room() {
@@ -50,12 +50,12 @@ function Room() {
 
                 {/* la desciption de l'annonce */}
                 <div className="details__description details__item">
-                    <Collaps title="Description" content={<p>{room.description}</p>} />
+                    <Collapse title="Description" content={<p>{room.description}</p>} />
                 </div>
 
                 {/* les équipements de l'annonce */}
                 <div className="details__equipment details__item">
-                    <Collaps
+                    <Collapse
                         title="Équipements"
                         content={
                             <ul>
