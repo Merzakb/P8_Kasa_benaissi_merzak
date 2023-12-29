@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/P8_Kasa_benaissi_merzak/static/css/main.ef55a1f1.css",
-    "main.js": "/P8_Kasa_benaissi_merzak/static/js/main.da3525f0.js",
+    "main.js": "/P8_Kasa_benaissi_merzak/static/js/main.c7730939.js",
     "static/media/aboutBackround.png": "/P8_Kasa_benaissi_merzak/static/media/aboutBackround.4e108f67418694b4d9db.png",
     "static/media/homeBackground.png": "/P8_Kasa_benaissi_merzak/static/media/homeBackground.7548b2a7d4de41ae5d51.png",
     "static/media/logo-header.svg": "/P8_Kasa_benaissi_merzak/static/media/logo-header.834bc052d72967b51536eb86c2a6c4b8.svg",
     "index.html": "/P8_Kasa_benaissi_merzak/index.html",
     "main.ef55a1f1.css.map": "/P8_Kasa_benaissi_merzak/static/css/main.ef55a1f1.css.map",
-    "main.da3525f0.js.map": "/P8_Kasa_benaissi_merzak/static/js/main.da3525f0.js.map"
+    "main.c7730939.js.map": "/P8_Kasa_benaissi_merzak/static/js/main.c7730939.js.map"
   },
   "entrypoints": [
     "static/css/main.ef55a1f1.css",
-    "static/js/main.da3525f0.js"
+    "static/js/main.c7730939.js"
   ]
 }
