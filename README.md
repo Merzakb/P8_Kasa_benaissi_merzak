@@ -35,37 +35,39 @@ c'est le frontend d'un site de location entre particuliers, code en React.
 ## Structure du Projet
 
 Kasa/
-|-- public/
-||--index.html
-|-- src/
-| |-- components/
-| | |-- Banner/Banner.jsx
-| | |-- Card/Card.jsx
-| | |-- Collapse/Collapse.jsx
-| | |-- Footer/Footer.jsx
-| | |-- Header/Header.jsx
-| | |-- Rating/rating.jsx
-| | |-- Slide/Slide.jsx
-| |-- pages/
-| | |-- About/About.jsx
-| | |-- Home/Home.jsx
-| | |-- NotFound/NotFound.jsx
-| | |-- Room/Room.jsx
-| |-- data/
-| | |-- roomList.js
-| |-- assets/
-| |-- logo-header.svg
-| |-- logo-footer.svg
-| |-- Sass/
-| | |-- base/
-| | |-- components/
-| | |-- Layout/
-| | |-- pages/
-| | |-- utilities/
-| | |-- index.scss
-| |-- App.jsx
-| |-- index.js
-|-- .gitignore
-|-- package.json
-|-- README.md
+
+- |-- public/
+-  ||--index.html
+- |-- src/
+-  | |-- components/
+-  | | |-- Banner/Banner.jsx
+-  | | |-- Card/Card.jsx
+-  | | |-- Collapse/Collapse.jsx
+-  | | |-- Footer/Footer.jsx
+-  | | |-- Header/Header.jsx
+-  | | |-- Rating/rating.jsx
+-  | | |-- Slide/Slide.jsx
+- | |-- pages/
+-  | | |-- About/About.jsx
+-  | | |-- Home/Home.jsx
+-  | | |-- NotFound/NotFound.jsx
+-  | | |-- Room/Room.jsx
+- | |-- data/
+-  | | |-- roomList.js
+- | |-- assets/
+-  | |-- logo-header.svg
+-  | |-- logo-footer.svg
+- | |-- Sass/
+-  | | |-- base/
+-  | | |-- components/
+-  | | |-- Layout/
+-  | | |-- pages/
+-  | | |-- utilities/
+-  | | |-- index.scss
+- | |-- App.jsx
+- | |-- index.js
+- |-- .gitignore
+- |-- package.json
+- |-- README.md
+
 
