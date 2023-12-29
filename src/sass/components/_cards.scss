@@ -54,4 +54,19 @@
             width: 45%;
         }
     }
+
+
+    /* animation des cards au survol */
+    @include large-screen{
+        &:hover {
+            transform: scale(1.1); 
+            transition: transform 0.3s ease; 
+        }
+    }
+    @include medium-screen{
+        &:hover {
+            transform: scale(1.1); 
+            transition: transform 0.3s ease; 
+        }
+    }
 }

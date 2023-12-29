@@ -16,3 +16,10 @@ $breakpoints: (
         @content;
     }
 };
+
+//large screen
+@mixin large-screen {
+    @media screen and (min-width: map-get($breakpoints, medium)){
+        @content;
+    }
+};
