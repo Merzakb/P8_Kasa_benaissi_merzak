@@ -1,8 +1,10 @@
 import Banner from "../../components/Banner/Banner"
 import Collapse from "../../components/Collapse/Collapse";
 import AboutBannerImage from "../../assets/aboutBackround.png"
+import {PageTitle} from "../../utils/PageTilte";
 
 function About() {
+    PageTitle("Kasa | À Propos")
     return (
         <div className="aboutPage">
             <Banner
