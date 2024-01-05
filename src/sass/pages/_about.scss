@@ -14,7 +14,11 @@
         flex-direction: column;
         margin: 0 5rem;
         gap: 1.88rem;
+        
         @include small-screen{
+            margin: 0;
+        }
+        @include medium-screen{
             margin: 0;
         }
     }

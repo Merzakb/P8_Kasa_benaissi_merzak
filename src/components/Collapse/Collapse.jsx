@@ -1,6 +1,8 @@
 // Importation du module React et du hook useState
 import React, { useState } from 'react'
-
+//import des icons de la librairie fontAwsome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 // Définition du composant de collapsible (collapse)
 function Collapse({ title, content }) {
     // State pour gérer l'état ouvert/fermé du collapsible
@@ -18,7 +20,7 @@ function Collapse({ title, content }) {
             <div className="collapse__title">
                 <p>{title}</p>
                 {/* La classe 'collapse__title--down' est ajoutée si le collapsible est ouvert */}
-                <i className={`fa-solid fa-chevron-up collapse__title--up ${isOpen ? 'collapse__title--down' : ''}`}></i>
+                <FontAwesomeIcon icon={faChevronUp} className={`collapse__title--up ${isOpen ? 'collapse__title--down' : ''}`} />
             </div>
             {/* Section du contenu avec une classe 'collapse__content--open' si le collapsible est ouvert */}
             <div className={`collapse__content ${isOpen ? 'collapse__content--open' : ''}`}>

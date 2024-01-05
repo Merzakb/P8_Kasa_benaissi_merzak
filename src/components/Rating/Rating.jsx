@@ -1,9 +1,13 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+
 function Rating({ rating }) {
     // Icone pour une étoile vide
-    const emptyIcon = <i className="fa-solid fa-star empty-star"></i>
+    //const emptyIcon = <i className="fa-solid fa-star empty-star"></i>
+    const emptyIcon =  <FontAwesomeIcon icon={faStar} className=" star star__empty empty-star" />
     
     // Icone pour une étoile pleine
-    const fullIcon = <i className="fa-solid fa-star "></i>
+    const fullIcon = <FontAwesomeIcon icon={faStar} className=" star star__full full-star" />
 
     // Fonction pour générer et afficher les étoiles en fonction du rating
     const renderStars = () => {

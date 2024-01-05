@@ -1,6 +1,6 @@
 {
-  "homepage": "https://merzakb.github.io/P8_Kasa_benaissi_merzak/",
-    "name": "kasa",
+
+  "name": "kasa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,0 +1,16 @@
+.star{
+    width: 1.2rem;
+    height: 1.2rem;
+    @include small-screen{
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
+    &__full{
+        color:#FF6060;
+    }
+
+    &__empty{
+        color: #C4C4C4;
+    }
+}

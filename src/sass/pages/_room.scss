@@ -57,11 +57,20 @@
     &__title{
         font-size: 2.25rem;
         padding: 0.7rem  0;
-        line-height: 1.1em;
+        font-weight: 500;
+        line-height: 142.6%;
+        
+        @include small-screen{
+            font-size: 1.125rem;
+        } 
     }
 
     &__location{
         font-size: 1.125rem;
+        font-weight: 500;
+        @include small-screen{
+            font-size: 0.875rem;
+        }
     }
 
     &__host{
@@ -116,6 +125,11 @@
             background-color:#FF6060;
             color: white;
             text-align: center;
+            font-size: 0.875rem;
+            font-style: normal;
+            @include small-screen{
+                font-size: 0.625rem;
+            }
         }
     }
 
@@ -151,9 +165,4 @@
             width: 98%;
         }
     }
-}
-
-
-.empty-star{
-    color: #C4C4C4;;
 }
