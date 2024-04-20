@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types'
+
+
 // Définition du composant Banner
 function Banner({ img, alt, title }) {
     // Rendu du composant
@@ -14,4 +17,11 @@ function Banner({ img, alt, title }) {
     );
 }
 
+Banner.propTypes = {
+    img : PropTypes.string,
+    alt : PropTypes.string,
+    title: PropTypes.string
+} 
+
 export default Banner
+

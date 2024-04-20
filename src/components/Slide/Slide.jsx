@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
+
 import ArrowLeft from "../../assets/arrow_left.png"
 import ArrowRight from "../../assets/arrow_right.png"
 
@@ -51,5 +53,9 @@ function Slide({ pictures }) {
         </div>
     );
 };
+
+Slide.propTypes = {
+    pictures: PropTypes.array
+} 
 
 export default Slide;

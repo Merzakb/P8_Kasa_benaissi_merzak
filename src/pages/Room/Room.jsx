@@ -49,7 +49,7 @@ function Room() {
 
                 {/* Score de l'annonceur */}
                 <div className="details__rating details__item">
-                    <Rating rating={room.rating} />
+                    <Rating rating={parseInt(room.rating)} />
                 </div>
 
                 {/* Description de la chambre avec possibilité de collapsage */}

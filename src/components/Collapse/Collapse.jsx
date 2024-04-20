@@ -1,5 +1,7 @@
 // Importation du module React et du hook useState
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+
 //import des icons de la librairie fontAwsome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
@@ -28,6 +30,14 @@ function Collapse({ title, content }) {
             </div>
         </div>
     )
+}
+
+Collapse.propTypes = {
+    content: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.object
+      ]),
+    title: PropTypes.string
 }
 
 export default Collapse

@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 function Rating({ rating }) {
     // Icone pour une étoile vide
-    //const emptyIcon = <i className="fa-solid fa-star empty-star"></i>
     const emptyIcon =  <FontAwesomeIcon icon={faStar} className=" star star__empty empty-star" />
     
     // Icone pour une étoile pleine
@@ -31,6 +32,11 @@ function Rating({ rating }) {
             {renderStars()}
         </div>
     )
+}
+
+
+Rating.propTypes = {
+    rating: PropTypes.number
 }
 
 export default Rating
