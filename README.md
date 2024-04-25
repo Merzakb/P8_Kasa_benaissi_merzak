@@ -1,38 +1,63 @@
-# Kasa - OpenClassrooms 
+![forthebadge](readme/built-with-🤍.svg)  ![forthebadge](readme/made-with-html.svg)  ![forthebadge](readme/made-with-css.svg) ![forthebadge](readme/made-with-javascript.svg) ![forthebadge](readme/made-with-sass.svg) ![forthebadge](readme/made-with-react.svg)
 
-Kasa, est le projet 8 de la formation intégrateur web - OpenClassrooms, 
-c'est le frontend d'un site de location entre particuliers, code en React.
+# Kasa 
+![Logo](src/assets/LOGO.png)
+
+Kasa is a peer-to-peer apartment rental website. 
+This code is the frontend of the site developed in React.
  
+## Screenshots
+![App Screenshot](kasa-home_page.png)
 
-## Table des matières
-
-- [Aperçu](#aperçu)
-- [Technologies Utilisées](#technologies-utilisées)
-- [Installation](#installation)
-- [Structure du Projet](#structure-du-projet)
-
-## Aperçu
-
-- Lien maquette Figma: `https://www.figma.com/file/qEno0LwL4ZLkWyeY59kxp1/UI-Design-Kasa-FR?node-id=0%3A1&mode=dev`
-- lien vers GitHub Pages : `https://merzakb.github.io/P8_Kasa_benaissi_merzak/` (le site est rediriger vers la page 404,
-                             cliquer sur Acceuil pour revenir à la page d'accueil)
-![page d'accueil - kasa](kasa-home_page.png)
-
-## Technologies Utilisées
-
-- React
-- Sass
-- JavaScript
+## Preview
+- Figma Mockup link: `https://www.figma.com/file/qEno0LwL4ZLkWyeY59kxp1/UI-Design-Kasa-FR?node-id=0%3A1&mode=dev`
+- GitHub Pages link: `https://merzakb.github.io/P8_Kasa_benaissi_merzak/` 
 
 ## Installation
-> suivre ces étapes pour installer le projet sur votre PC en local : 
+To install and run this project locally on your machine, follow these simple steps:
 
-1. Clônez le dépôt : `git clone https://github.com/Merzakb/P8_Kasa_benaissi_merzak`
-2. Accédez au répertoire : `cd P8_Kasa_benaissi_merzak`
-3. Installez les dépendances : `npm install` ou `yarn`
-4. Démarrez l'application : `npm start` ou `yarn start`
+1. Make sure you have Node.js installed on your machine. If not, you can download and install it from [the official Node.js website](https://nodejs.org/).
 
-## Structure du Projet
+2. Clone this GitHub repository to your local machine using the following command:
+
+    ```
+    git clone https://github.com/Merzakb/P6-sophie-bluel
+    ```
+
+3. Run the following commands:
+
+```bash
+# Navigate to the application directory
+cd cd P8_Kasa_benaissi_merzak
+```
+
+```bash
+# Install dependencies
+npm install
+```
+
+```bash
+# Start local dev server
+npm start
+``` 
+
+## Technologies :
+ ![forthebadge](readme/made-with-html.svg)  ![forthebadge](readme/made-with-css.svg) ![forthebadge](readme/made-with-javascript.svg) ![forthebadge](readme/made-with-sass.svg) ![forthebadge](readme/made-with-react.svg)
+
+
+## Authors
+- [@Merzak](https://github.com/Merzakb)
+
+![Logo](readme/made-by-merzak.svg)
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://merzak-portfolio.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/merzak-b-0300b9289/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/__merzak)
+
+
+## Project Structure
 
 Kasa/
 
